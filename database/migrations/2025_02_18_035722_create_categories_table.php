@@ -18,14 +18,6 @@ return new class extends Migration
             $table->string('quantity')->unique(); 
             $table->timestamps(); //  
         });
-
-        Schema::create('itemname', function (Blueprint $table) {
-            $table->id(); 
-            $table->string('itemname')->unique(); 
-            $table->string('price')->unique(); 
-            $table->string('quantity')->unique(); 
-            $table->timestamps(); //  
-        });
     }
 
     /**
