@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('template.main')
 
-<head style = "font-family: 'Poppins', sans-serif;">
+@section('title', 'Categories List')
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+@section('content')
 
     <title>Inventory</title>
 
@@ -30,47 +24,7 @@
             border: 1px solid #ccc;
         }
     </style>
-
-    <h5 class = "mt-2"
-        style = "text-align: center; font-family: 'Courier New', Courier, monospace; font-size: small; text-decoration: dotted;">
-        free international shipping on orders $150+ USD. free returns always. </h5>
-
-    <div class = "d-flex justify-content-center mt-2" style = "width: 100  %; font-size: 8;">
-        <div class = "container rounded-3"
-            style = "background-color: rgb(255, 254, 254); width: 90%; height: 40px; color: black;">
-
-
-            <ul class = "nav nav-tabs card-header-tabs justify-content-center">
-
-                <li class = "nav-item">
-                    <a class = "nav-link disabled" aria-current="true" href = "#"> R.E.M BEAUTY </a>
-                </li>
-
-                <li class = "nav-item">
-                    <a class = "nav-link disabled" aria-current="true" href = "#"> NEW COLLECTION </a>
-                </li>
-
-                <li class = "nav-item">
-                    <a class = "nav-link disabled" href = "#"> LOG IN </a>
-                </li>
-
-                <li class = "nav-item">
-                    <a class = "nav-link disabled" aria-current="true" href = "#"> CATALOG </a>
-                </li>
-
-                <li class= "nav-item">
-                    <a class = "nav-link disabled" aria-disabled = "true"> BEST SELLERS </a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-    </div>
-
-</head>
-
-<body style="font-family: 'Poppins', sans-serif; background-color: rgba(238, 240, 240, 0.99);">
-
+    
     <div class="container-xxl rounded-3 mt-2" style="background-color: white; height: 35vh;  ">
 
         <div class="col-4 text-left ms-5" style="height: 200px; width: 28;>
@@ -94,7 +48,7 @@
                 <tr>
                     <th scope="col">Category</th>
                     <th scope="col">Item Name</th>
-                    <th scope="col">Wty</th>
+                    <th scope="col">Qty</th>
                     <th scope="col"> Price </th>
                     <th scope="col"> Action </th>
 
@@ -132,6 +86,4 @@
     </div>
 
     </div>
-</body>
-
-</html>
+@endsection

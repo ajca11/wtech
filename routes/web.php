@@ -17,3 +17,4 @@ Route::get('/create', 'App\Http\Controllers\CreateController@index');
 
 
 Route::get('/sellers', 'App\Http\Controllers\Sellers@index');
+Route::get('/index', 'App\Http\Controllers\CategoryController@index');

@@ -161,7 +161,7 @@
                     <tr>
                         <th scope="col">Category</th>
                         <th scope="col">Item Name</th>
-                        <th scope="col">Wty</th>
+                        <th scope="col">Qty</th>
                         <th scope="col"> Price </th>
                         <th scope="col"> Action </th>
 
