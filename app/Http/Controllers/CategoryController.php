@@ -8,15 +8,42 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    public function index() {
-        // Retrieve all records from the categories table.
+    public function index()
+    {
         $categories = Category::all();
-
-        // Pass the data to the view using the compact helper.
         return view('categories.index')->with([
-                    'categories' => $categories
-                   ]);
+            'categories' => $categories,
+        ]);
     }
 
-}
+    public function edit($id)
+    {
+        $category = Category::findOrFail($id);
+        return view('categories.edit', compact('category')); 
+    }
 
+    public function update(Request $request, $id)
+    {
+        $category = Category::findOrFail($id);
+        $request->validate([
+            'itemname' => 'required|string|max:255',
+            'price' => 'required|numeric',
+            'quantity' => 'required|integer',
+        ]);
+
+        $category->update([
+            'itemname' => $request->itemname,
+            'price' => $request->price,
+            'quantity' => $request->quantity,
+        ]);
+
+        return redirect()->route('categories.index')->with('success', 'Category updated successfully');
+    }
+
+    public function destroy($id)
+    {
+        $category = Category::findOrFail($id);
+        $category->delete();
+        return redirect()->route('categories.index')->with('success', 'Category deleted successfully');
+    }
+}

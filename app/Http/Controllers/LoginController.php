@@ -11,7 +11,7 @@ class LoginController extends Controller
     }
 
     public function auth(Request $request):RedirectResponse{
-        return redirect('/inventory');
+        return redirect('/index');
     }
 
 }

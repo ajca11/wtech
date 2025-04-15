@@ -8,7 +8,7 @@ class CreateController extends Controller
 {
     public function index()
 {
-    return view('inventory.create'); 
+    return view('categories.edit'); 
 }
 
 }

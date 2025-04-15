@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 
+<style>
+    .logo {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/REM_Beauty_cosmetics_brand_logo.webp/1200px-REM_Beauty_cosmetics_brand_logo.webp.png");
+            background-size: cover;
+    }
+
+</style>
+
 <head style = "font-family: 'Poppins', sans-serif;">
 
     <meta charset="UTF-8">
@@ -14,16 +22,20 @@
         style = "text-align: center; font-family: 'Courier New', Courier, monospace; font-size: small; text-decoration: dotted;">
         free international shipping on orders $150+ USD. free returns always. </h5>
 
-    <div class = "d-flex justify-content-center mt-2" style = "width: 100  %; font-size: 8;">
-        <div class = "container rounded-3"
-            style = "background-color: rgb(255, 254, 254); width: 90%; height: 40px; color: black;">
+        <div class = "container fluid mt-2"
+        <div class = "d-flex justify-content-center mt-2" style = "width: 100%; font-size: 8;">
+            <div class = "container rounded-3" style = "background-color: rgb(255, 254, 254);">
 
 
             <ul class = "nav nav-tabs card-header-tabs justify-content-center">
+                
+        
 
-                <li class = "nav-item">
-                    <a class = "nav-link disabled" aria-current="true" href = "#"> R.E.M BEAUTY </a>
-                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href = "#">
+                        <img src="logo.png" alt = "R.E.M BEAUTY" style="height: 24px;">
+                    </a>
+                </li>                
 
                 <li class = "nav-item">
                     <a class = "nav-link disabled" aria-current="true" href = "#"> NEW COLLECTION </a>
@@ -40,19 +52,16 @@
                 <li class= "nav-item">
                     <a class = "nav-link disabled" aria-disabled = "true"> BEST SELLERS </a>
                 </li>
-
             </ul>
         </div>
     </div>
     </div>
+
 </head>
 
 <body style="font-family: 'Poppins', sans-serif; background-color: rgba(238, 240, 240, 0.99);">
-    <div class="container mt-4">
-        @yield('content')
-    </div>
+    <div class="container">@yield('content')</div>
 
-    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>

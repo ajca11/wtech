@@ -43,10 +43,26 @@ class CategoriesSeed extends Seeder
                 'updated_at' => now()
             ],
             [
+                'category' => 'Lip Gloss',
+                'itemname' => 'Eternal Gloss',
+                'price' => 13.99,
+                'quantity' => 10,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
                 'category' => 'Concealer',
                 'itemname' => 'Eternal Concealer',
                 'price' => 16.99,
                 'quantity' => 5,
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'category' => 'Eyebrow Pen',
+                'itemname' => 'Eternal Pen',
+                'price' => 10.99,
+                'quantity' => 51,
                 'created_at' => now(),
                 'updated_at' => now()
             ]
